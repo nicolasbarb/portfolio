@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%
+}
+
+.headerDiv {
+    position: relative;
+    width: 100vw;
+    padding-top: 37vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerDiv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40vw;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.headerDiv::after {
+    content: "";
+    display: block;
+    background: linear-gradient(to bottom,
+                    rgba(0,0,0,0) 0%,
+                    rgba(255,255,255,0.75) 60%,
+                    rgba(255,255,255,1) 100%);
+    position: absolute;
+    top: 16vw;
+    left: 0;
+    right: 0;
+    height: 24vw;
+    z-index: -1;
+}
+
+.headerDiv h1 {
+    text-align: center;
+}
+
+.generalInformation {
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+}
+
+.lifeFlow {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.lifeFlow .lifeFlow__DotSection {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lifeFlow .lifeFlow__DotSection:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 5px;
+    background-color: #7D1D2E;
+    transform: translateX(-50%);
+
+}
+
+.lifeFlow .lifeFlow__DotSection:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #7D1D2E;
+    transform: translate(-50%, -50%);
+    transform-origin: top left;
+    animation: popOn 0.500s;
+    animation-fill-mode: forwards;
+
+}
+
+.lifeFlow__leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 55vw;
+    border: solid transparent;
+    border-radius: 39px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.2);
+    padding: 15px 20px;
+    min-width: 35vw;
+}
+
+.lifeFlow__leftSide * {
+    margin: 5px 0;
+}
+
+.lifeFlow__rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 55vw;
+    margin-right: 10vw;
+    border: solid transparent;
+    border-radius: 39px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.2);
+    padding: 15px 20px;
+    min-width: 35vw;
+}
+
+.lifeFlow__rightSide * {
+    margin: 5px 0;
+}
+
+.lifeFlow .lifeFlow__DotSection .lifeFlow__date {
+}
+
+.lifeFlow .lifeFlow__DotSection .lifeFlow__desc {
+}
+
+.lifeFlow:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 18px solid #7D1D2E;
+    transform: translateX(-50%);
+}
+
+/*!* row paire *!
+.lifeFlow .lifeFlowDotSection:nth-child(odd) .element-frise__desc {
+    text-align: right;
+    opacity: 0;
+    animation: translateInByLeftDesc 1.200s 0.800s;
+    animation-fill-mode: forwards;
+}
+
+.lifeFlow .lifeFlowDotSection:nth-child(odd) .element-frise__date {
+    animation: translateInByRight 0.800s;
+}
+
+!* row impair *!
+.lifeFlow .lifeFlowDotSection:nth-child(even) .element-frise__date {
+    text-align: right;
+    animation: translateInByLeft 0.800s;
+}
+
+.lifeFlow .lifeFlowDotSection:nth-child(even) .element-frise__desc {
+    opacity: 0;
+    animation: translateInByRightDesc 1.200s 0.800s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes translateInByRightDesc {
+    0% {
+        transform: translateX(20vw);
+    }
+    10% {
+        opacity: 40%;
+    }
+    80% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes translateInByLeftDesc {
+    0% {
+        transform: translateX(-20vw);
+    }
+    10% {
+        opacity: 40%;
+    }
+
+    80% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes translateInByLeft {
+    from {
+        transform: translateX(-45%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes translateInByRight {
+    from {
+        transform: translateX(45%) ;
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes popOn {
+    from {
+        transform: scale(0) translate(-50%, -50%);
+    }
+    to {
+        transform: scale(1) translate(-50%, -50%);
+    }
+}*/
