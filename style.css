@@ -8,21 +8,64 @@ body {
     width: 100%
 }
 
-header img {
-    width: 100%;
-}
-
 .headerDiv {
-    height: 200px;
-}
-
-header .headerDiv::after {
-    display: block;
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
-    margin-top:-500px;
-    height: 500px;
-    width: 100%;
-    content: '';
+    width: 100vw;
+    padding-top: 37vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.headerDiv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40vw;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.headerDiv::after {
+    content: "";
+    display: block;
+    background: linear-gradient(to bottom,
+                    rgba(0,0,0,0) 0%,
+                    rgba(255,255,255,0.75) 60%,
+                    rgba(255,255,255,1) 100%);
+    position: absolute;
+    top: 16vw;
+    left: 0;
+    right: 0;
+    height: 24vw;
+    z-index: -1;
+}
+
+.headerDiv h1 {
+    text-align: center;
+}
+
+.generalInformation {
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*
+@media(min-width: -) {
+
+}
+
+320px => style de base = mobile first
+780px => landscape (téléphone en paysage)
+960px => tablette
+1100px / 1280px => petit PC (suivant la largeur de ton menu en mode PC)
+1440px => laptop classique (si nécessaire uniquement)
+1920px => desktop pour le résultat final
+*/
