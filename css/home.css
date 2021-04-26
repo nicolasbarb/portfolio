@@ -54,5 +54,29 @@ body {
     width: 80vw;
     max-width: 1024px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.othersInformation {
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 80vw;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.othersInformation button {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 33vw;
+    border: solid #7D1D2E;
+    background-color: #7D1D2E;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.2);
+    font-size: 20px;
 }

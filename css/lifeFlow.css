@@ -113,7 +113,6 @@ a, a:visited, a:hover, a:active {
     transform: translateX(-50%);
 }
 
-
 /*!* row paire *!
 .lifeFlow .lifeFlowDotSection:nth-child(odd) .element-frise__desc {
     text-align: right;
