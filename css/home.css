@@ -80,3 +80,24 @@ body {
     box-shadow: 5px 5px 10px rgba(0,0,0, 0.2);
     font-size: 20px;
 }
+
+.button {
+    padding: 10px;
+    border: solid transparent;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.2);
+    border-radius: 20px;
+    background-color: #7D1D2E;
+    color: white;
+    margin: 10px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.centeredImage {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
